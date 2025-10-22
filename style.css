@@ -62,13 +62,19 @@ h2 {
   color: #0056b3;
   border-bottom: 2px solid #0056b3;
   padding-bottom: 5px;
+  text-align: center; /* center only the section headings */
 }
 
+/* Keep the schools grid but make card content left-aligned while cards stay in grid */
 .schools {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 15px;
   margin-top: 15px;
+}
+
+.schools .card {
+  text-align: left; /* left-align text within each school card */
 }
 
 .card {
@@ -86,6 +92,17 @@ h2 {
 #hobbies ul {
   list-style: none;
   padding: 0;
+}
+
+/* Work Experience card styling */
+.job {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  margin: 15px auto;
+  text-align: left; /* left-align work experience details */
 }
 
 #hobbies li {
